@@ -1,0 +1,118 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Dev Congo",
+      "email": "dev@wazicode.io",
+      "plan": "pro",
+      "phone": "+242061111111",
+      "verified": true
+    },
+    {
+      "id": 2,
+      "name": "Startup BZ",
+      "email": "startup@wazicode.io",
+      "plan": "business",
+      "phone": "+242062222222",
+      "verified": true
+    },
+    {
+      "id": 3,
+      "name": "Étudiant L2",
+      "email": "etu@univ.cg",
+      "plan": "free",
+      "phone": "+242063333333",
+      "verified": true
+    }
+  ],
+  "api_keys": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "key": "wz_a1b2c3d4e5f6g7h8i9j0",
+      "name": "Production Key",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "key": "wz_k1l2m3n4o5p6q7r8s9t0",
+      "name": "Business Key",
+      "status": "active"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "type": "mobile_money",
+      "phone": "+242061111111",
+      "amount": 1000,
+      "provider": "MTN",
+      "status": "success",
+      "reference": "MM1725712200000"
+    },
+    {
+      "id": 2,
+      "type": "sms",
+      "phone": "+242061111111",
+      "message": "Test SMS WaziCode",
+      "status": "delivered"
+    },
+    {
+      "id": 3,
+      "type": "ussd",
+      "code": "*123#",
+      "phone": "+242061111111",
+      "status": "session_active",
+      "response": "Bienvenue WaziCode\\n1. Solde\\n2. Transfert"
+    }
+  ],
+  "sdks": [
+    {
+      "name": "@wazicode/mobilemoney",
+      "version": "1.2.0",
+      "language": "Node.js",
+      "downloads": 15420
+    },
+    {
+      "name": "@wazicode/sms",
+      "version": "1.0.5",
+      "language": "Node.js",
+      "downloads": 8930
+    },
+    {
+      "name": "@wazicode/ussd",
+      "version": "0.9.0",
+      "language": "Node.js",
+      "downloads": 5210
+    },
+    {
+      "name": "wazicode-flutter",
+      "version": "1.1.0",
+      "language": "Dart",
+      "downloads": 12300
+    },
+    {
+      "name": "wazicode-python",
+      "version": "1.0.0",
+      "language": "Python",
+      "downloads": 7800
+    }
+  ],
+  "sandboxes": [
+    {
+      "id": 1,
+      "type": "mobile_money",
+      "phone": "+242061111111",
+      "amount": 1000,
+      "status": "success"
+    },
+    {
+      "id": 2,
+      "type": "sms",
+      "phone": "+242061111111",
+      "message": "Test",
+      "status": "delivered"
+    }
+  ]
+}
